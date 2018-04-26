@@ -1,0 +1,20 @@
+--------------------------------------------------------
+-- Archivo creado  - miércoles-abril-25-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Function FUNCTION_1
+--------------------------------------------------------
+
+  CREATE OR REPLACE FUNCTION "SYSTEM"."FUNCTION_1" (A IN NUMBER, B IN NUMBER, C IN NUMBER)
+RETURN varchar IS
+x varchar2(20) ;
+    BEGIN
+if B>=c THEN
+	x := A || "/" || A*B || "/" || "Andres";
+ELSE 
+	x := A|| "/"  || B*B || "Martinez";
+END IF;
+    RETURN x;
+END FUNCTION_1;
+
+/

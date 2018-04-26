@@ -1,0 +1,17 @@
+--------------------------------------------------------
+-- Archivo creado  - miércoles-abril-25-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Function FUNCTION_2
+--------------------------------------------------------
+
+  CREATE OR REPLACE FUNCTION "SYSTEM"."FUNCTION_2" (n Positive) Return Integer Is
+Begin
+	IF (n = 1) OR (n = 2) THEN 
+		Return 1;
+	Else
+		Return fib(n - 1) + fib(n - 2); 
+	End If;
+End Function_2;
+
+/
